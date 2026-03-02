@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f6f5f8;
+  color: #1e293b;
+}
+
+.nav {
+  background: #6c3ef8;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(108, 62, 248, 0.2);
+}
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.update-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s;
+}
+.update-card:active {
+  transform: scale(0.95);
+}
+.update-card i {
+  color: #6c3ef8;
+  font-weight: bold;
+}
+
+/* Grid Moderno */
+.notices__cards_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid #f1f5f9;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+.card p {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.close {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #64748b;
+}
+.btn-pdf {
+  background: #6c3ef8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  gap: 5px;
+}
+
+@media (max-width: 600px) {
+  .notices__cards_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Adicione ao seu CSS existente */
+.loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  color: #6C3EF8;
+}
+
+.card-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6C3EF8;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.read-more-btn {
+  margin-top: 15px;
+  background: transparent;
+  border: 1.5px solid #6C3EF8;
+  color: #6C3EF8;
+  padding: 8px 15px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.read-more-btn:hover {
+  background: #6C3EF8;
+  color: white;
+}
