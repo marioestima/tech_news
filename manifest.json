@@ -1,18 +1,14 @@
 {
   "name": "Tech News Daily",
   "short_name": "TechNews",
-  "start_url": "./index.html",
+  "description": "Notícias de tecnologia traduzidas automaticamente",
+  "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#3d91ff",
+  "background_color": "#6C3EF8",
+  "theme_color": "#6C3EF8",
   "icons": [
     {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icons/icon-512.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/21/21601.png",
       "sizes": "512x512",
       "type": "image/png"
     }
