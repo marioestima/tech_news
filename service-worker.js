@@ -6,7 +6,7 @@ const filesToCache = [
   "/js/app.js",
   "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js",
   "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css",
-];c
+];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(

@@ -7,7 +7,7 @@ const modalContent = document.getElementById("modal-content");
 let currentArticle = { title: "", content: "" };
 
 // Chave e URL da NewsAPI
-const API_KEY = "7c5d88baecfc4ac182d7321d22164bb8";
+const API_KEY = "YOUR_API_KEY";
 const API_URL = `https://newsapi.org/v2/top-headlines?country=us&category=technology&pageSize=12&apiKey=${API_KEY}`;
 
 // Registrar Service Worker para PWA
